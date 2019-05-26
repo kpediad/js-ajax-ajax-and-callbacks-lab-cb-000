@@ -17,7 +17,7 @@ function searchRepositories() {
 function showCommits(el) {
   const name = el.dataset.repository;
   const username = el.dataset.owner;
-  $.get('https://api.github.com/repos/' + username + '/' + name + '/commits', function(commits) {
+  $.get('https://api.github.com/repos/' + username5 + '/' + name4 + '/commits', function(commits) {
     let htmlString = '<ul>';
     $.each(commits, function(idx, commit) {
       htmlString = htmlString + '<li>SHA: ' + commit.sha + '- Author: ' + commit.author.login + ' - Avatar: <img height="32" width="32" src="' + commit.author.avatar_url + '"></li>';
